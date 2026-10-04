@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Register a Course</title>
+        <style>
+            button {
+                background-color: #000709; 
+                text-align: center;
+            }
+            form {
+                margin: auto;
+                padding: 20px;
+                width: 400px;
+                background-color: #aab330;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #000000;
+                text-align: center;
+                margin-top: 70px;
+            }
+            input,select,button{
+                width: 90%;
+                padding: 10px;
+                margin: 10px;
+            }
+            button{
+                background-color: #000709; 
+                color: white;
+                font-weight: bold;
+                font-size: medium;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: #10e817;
+            }
+        </style> 
+        </head>
+
+<body>
+    <h2 style="color: rgb(251, 251, 251);">Kickstart with an exciting course</h2>
+   
+
+    <form action="http://localhost:8080/course/register" method="POST">
+        <label for="courseName">Enter Your CourseName:</label>
+        <select id="courseName" name="courseName" required>
+            <option value="">Select a course</option>
+            <option value=Introduction to Programming></option>
+            <option value=Data Structures and Algorithms></option>
+            <option value=Web Development></option>
+            <option value=Database Management Systems></option>
+            <option value=Software Engineering></option>
+        </select>
+        <br><br>
+
+        <label for="emailId">Enter Your Email ID:</label>
+        <input type="text" id="emailId" name="emailId" required><br><br>
+
+        <label for="name">Enter Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+
+
+        <input type="submit" value="Register Course">
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script type="text/javascript" src="script.js"></script>
+
+          <style>
+            td{
+                background-color: aliseblue;
+            }
+            body{
+                padding: 50px;
+            }
+    
+    </style> 
+    </head>
+  
+    <body>
+        <h2 align="center">Available Courses</h2>
+        <table align="center" border="1" style="background-color: rgb(245, 242, 242);">
+            <tr style="background-color: lightblue;">   
+                <th width="100">courseId</th>
+                <th width="200">courseName</th>
+                <th width="150">trainer</th>
+                <th width="150">durationInWeek</th>
+            </tr>
+
+            <tbody align="center" id="courseTableBody">
+                <!-- Course rows will be dynamically added here -->
+        </table>
+        <script type="text/javascript">
+            window.onload = function(){
+                showAvailableCourses();  
+            }
+        </script> 
+    </body>
+</html>
